@@ -1,0 +1,932 @@
+{
+  "orders": [
+    {
+      "Id": "ORD1001",
+      "reason": "Defective product",
+      "store_name": "Tech Haven",
+      "store_logo": "https://example.com/logos/techhaven.png",
+      "store_url": "https://techhaven.com",
+      "amount": 120.5,
+      "active": true,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Wireless Mouse",
+          "id": "PROD001",
+          "price": 25.99,
+          "quantity": 2
+        },
+        {
+          "name": "Mechanical Keyboard",
+          "id": "PROD002",
+          "price": 74.99,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "Id": "ORD1002",
+      "reason": "Wrong item shipped",
+      "store_name": "Fashion Hub",
+      "store_logo": "https://example.com/logos/fashionhub.png",
+      "store_url": "https://fashionhub.com",
+      "amount": 89.99,
+      "active": false,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Men's T-Shirt",
+          "id": "PROD003",
+          "price": 19.99,
+          "quantity": 3
+        },
+        {
+          "name": "Women's Jeans",
+          "id": "PROD004",
+          "price": 49.99,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "Id": "ORD1003",
+      "reason": "Customer changed mind",
+      "store_name": "Home Essentials",
+      "store_logo": "https://example.com/logos/homeessentials.png",
+      "store_url": "https://homeessentials.com",
+      "amount": 45.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "Blender", "id": "PROD005", "price": 35.0, "quantity": 1 },
+        {
+          "name": "Coffee Maker",
+          "id": "PROD006",
+          "price": 10.0,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "Id": "ORD1004",
+      "reason": "Product damaged during shipping",
+      "store_name": "Gadget World",
+      "store_logo": "https://example.com/logos/gadgetworld.png",
+      "store_url": "https://gadgetworld.com",
+      "amount": 200.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "Smartphone", "id": "PROD007", "price": 200.0, "quantity": 1 }
+      ]
+    },
+    {
+      "Id": "ORD1005",
+      "reason": "Incorrect size",
+      "store_name": "Shoe Palace",
+      "store_logo": "https://example.com/logos/shoepalace.png",
+      "store_url": "https://shoepalace.com",
+      "amount": 65.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Running Shoes",
+          "id": "PROD008",
+          "price": 65.0,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "Id": "ORD1006",
+      "reason": "Defective product",
+      "store_name": "Tech Haven",
+      "store_logo": "https://example.com/logos/techhaven.png",
+      "store_url": "https://techhaven.com",
+      "amount": 150.75,
+      "active": true,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Bluetooth Speaker",
+          "id": "PROD009",
+          "price": 50.25,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "Id": "ORD1007",
+      "reason": "Customer changed mind",
+      "store_name": "Home Essentials",
+      "store_logo": "https://example.com/logos/homeessentials.png",
+      "store_url": "https://homeessentials.com",
+      "amount": 90.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "Air Fryer", "id": "PROD010", "price": 90.0, "quantity": 1 }
+      ]
+    },
+    {
+      "Id": "ORD1008",
+      "reason": "Wrong item shipped",
+      "store_name": "Fashion Hub",
+      "store_logo": "https://example.com/logos/fashionhub.png",
+      "store_url": "https://fashionhub.com",
+      "amount": 120.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Women's Dress",
+          "id": "PROD011",
+          "price": 60.0,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "Id": "ORD1009",
+      "reason": "Product damaged during shipping",
+      "store_name": "Gadget World",
+      "store_logo": "https://example.com/logos/gadgetworld.png",
+      "store_url": "https://gadgetworld.com",
+      "amount": 300.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "Laptop", "id": "PROD012", "price": 300.0, "quantity": 1 }
+      ]
+    },
+    {
+      "Id": "ORD1010",
+      "reason": "Incorrect size",
+      "store_name": "Shoe Palace",
+      "store_logo": "https://example.com/logos/shoepalace.png",
+      "store_url": "https://shoepalace.com",
+      "amount": 130.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Casual Shoes",
+          "id": "PROD013",
+          "price": 65.0,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "Id": "ORD1011",
+      "reason": "Defective product",
+      "store_name": "Tech Haven",
+      "store_logo": "https://example.com/logos/techhaven.png",
+      "store_url": "https://techhaven.com",
+      "amount": 75.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "USB-C Cable", "id": "PROD014", "price": 15.0, "quantity": 5 }
+      ]
+    },
+    {
+      "Id": "ORD1012",
+      "reason": "Customer changed mind",
+      "store_name": "Home Essentials",
+      "store_logo": "https://example.com/logos/homeessentials.png",
+      "store_url": "https://homeessentials.com",
+      "amount": 45.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Electric Kettle",
+          "id": "PROD015",
+          "price": 45.0,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "Id": "ORD1013",
+      "reason": "Wrong item shipped",
+      "store_name": "Fashion Hub",
+      "store_logo": "https://example.com/logos/fashionhub.png",
+      "store_url": "https://fashionhub.com",
+      "amount": 80.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Men's Jacket",
+          "id": "PROD016",
+          "price": 80.0,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "Id": "ORD1014",
+      "reason": "Product damaged during shipping",
+      "store_name": "Gadget World",
+      "store_logo": "https://example.com/logos/gadgetworld.png",
+      "store_url": "https://gadgetworld.com",
+      "amount": 250.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "Tablet", "id": "PROD017", "price": 250.0, "quantity": 1 }
+      ]
+    },
+    {
+      "Id": "ORD1015",
+      "reason": "Incorrect size",
+      "store_name": "Shoe Palace",
+      "store_logo": "https://example.com/logos/shoepalace.png",
+      "store_url": "https://shoepalace.com",
+      "amount": 195.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Formal Shoes",
+          "id": "PROD018",
+          "price": 65.0,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "Id": "ORD1016",
+      "reason": "Defective product",
+      "store_name": "Tech Haven",
+      "store_logo": "https://example.com/logos/techhaven.png",
+      "store_url": "https://techhaven.com",
+      "amount": 180.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Wireless Earbuds",
+          "id": "PROD019",
+          "price": 60.0,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "Id": "ORD1017",
+      "reason": "Customer changed mind",
+      "store_name": "Home Essentials",
+      "store_logo": "https://example.com/logos/homeessentials.png",
+      "store_url": "https://homeessentials.com",
+      "amount": 55.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "Toaster", "id": "PROD020", "price": 55.0, "quantity": 1 }
+      ]
+    },
+    {
+      "Id": "ORD1018",
+      "reason": "Wrong item shipped",
+      "store_name": "Fashion Hub",
+      "store_logo": "https://example.com/logos/fashionhub.png",
+      "store_url": "https://fashionhub.com",
+      "amount": 140.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Women's Blouse",
+          "id": "PROD021",
+          "price": 70.0,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "Id": "ORD1019",
+      "reason": "Product damaged during shipping",
+      "store_name": "Gadget World",
+      "store_logo": "https://example.com/logos/gadgetworld.png",
+      "store_url": "https://gadgetworld.com",
+      "amount": 400.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Gaming Console",
+          "id": "PROD022",
+          "price": 400.0,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "Id": "ORD1020",
+      "reason": "Incorrect size",
+      "store_name": "Shoe Palace",
+      "store_logo": "https://example.com/logos/shoepalace.png",
+      "store_url": "https://shoepalace.com",
+      "amount": 260.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        { "name": "Boots", "id": "PROD023", "price": 130.0, "quantity": 2 }
+      ]
+    },
+    {
+      "Id": "ORD1021",
+      "reason": "Defective product",
+      "store_name": "Tech Haven",
+      "store_logo": "https://example.com/logos/techhaven.png",
+      "store_url": "https://techhaven.com",
+      "amount": 95.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "Power Bank", "id": "PROD024", "price": 95.0, "quantity": 1 }
+      ]
+    },
+    {
+      "Id": "ORD1022",
+      "reason": "Customer changed mind",
+      "store_name": "Home Essentials",
+      "store_logo": "https://example.com/logos/homeessentials.png",
+      "store_url": "https://homeessentials.com",
+      "amount": 70.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Vacuum Cleaner",
+          "id": "PROD025",
+          "price": 70.0,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "Id": "ORD1023",
+      "reason": "Wrong item shipped",
+      "store_name": "Fashion Hub",
+      "store_logo": "https://example.com/logos/fashionhub.png",
+      "store_url": "https://fashionhub.com",
+      "amount": 160.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Men's Sweater",
+          "id": "PROD026",
+          "price": 80.0,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "Id": "ORD1024",
+      "reason": "Product damaged during shipping",
+      "store_name": "Gadget World",
+      "store_logo": "https://example.com/logos/gadgetworld.png",
+      "store_url": "https://gadgetworld.com",
+      "amount": 500.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "Smart TV", "id": "PROD027", "price": 500.0, "quantity": 1 }
+      ]
+    },
+    {
+      "Id": "ORD1025",
+      "reason": "Incorrect size",
+      "store_name": "Shoe Palace",
+      "store_logo": "https://example.com/logos/shoepalace.png",
+      "store_url": "https://shoepalace.com",
+      "amount": 195.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        { "name": "Sneakers", "id": "PROD028", "price": 65.0, "quantity": 3 }
+      ]
+    },
+    {
+      "Id": "ORD1026",
+      "reason": "Defective product",
+      "store_name": "Tech Haven",
+      "store_logo": "https://example.com/logos/techhaven.png",
+      "store_url": "https://techhaven.com",
+      "amount": 110.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "HDMI Cable", "id": "PROD029", "price": 10.0, "quantity": 11 }
+      ]
+    },
+    {
+      "Id": "ORD1027",
+      "reason": "Customer changed mind",
+      "store_name": "Home Essentials",
+      "store_logo": "https://example.com/logos/homeessentials.png",
+      "store_url": "https://homeessentials.com",
+      "amount": 85.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "Microwave", "id": "PROD030", "price": 85.0, "quantity": 1 }
+      ]
+    },
+    {
+      "Id": "ORD1028",
+      "reason": "Wrong item shipped",
+      "store_name": "Fashion Hub",
+      "store_logo": "https://example.com/logos/fashionhub.png",
+      "store_url": "https://fashionhub.com",
+      "amount": 180.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Women's Skirt",
+          "id": "PROD031",
+          "price": 90.0,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "Id": "ORD1029",
+      "reason": "Product damaged during shipping",
+      "store_name": "Gadget World",
+      "store_logo": "https://example.com/logos/gadgetworld.png",
+      "store_url": "https://gadgetworld.com",
+      "amount": 350.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "Drone", "id": "PROD032", "price": 350.0, "quantity": 1 }
+      ]
+    },
+    {
+      "Id": "ORD1030",
+      "reason": "Incorrect size",
+      "store_name": "Shoe Palace",
+      "store_logo": "https://example.com/logos/shoepalace.png",
+      "store_url": "https://shoepalace.com",
+      "amount": 260.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        { "name": "Sandals", "id": "PROD033", "price": 65.0, "quantity": 4 }
+      ]
+    },
+    {
+      "Id": "ORD1031",
+      "reason": "Defective product",
+      "store_name": "Tech Haven",
+      "store_logo": "https://example.com/logos/techhaven.png",
+      "store_url": "https://techhaven.com",
+      "amount": 130.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        {
+          "name": "External Hard Drive",
+          "id": "PROD034",
+          "price": 130.0,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "Id": "ORD1032",
+      "reason": "Customer changed mind",
+      "store_name": "Home Essentials",
+      "store_logo": "https://example.com/logos/homeessentials.png",
+      "store_url": "https://homeessentials.com",
+      "amount": 60.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "Rice Cooker", "id": "PROD035", "price": 60.0, "quantity": 1 }
+      ]
+    },
+    {
+      "Id": "ORD1033",
+      "reason": "Wrong item shipped",
+      "store_name": "Fashion Hub",
+      "store_logo": "https://example.com/logos/fashionhub.png",
+      "store_url": "https://fashionhub.com",
+      "amount": 200.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        { "name": "Men's Coat", "id": "PROD036", "price": 100.0, "quantity": 2 }
+      ]
+    },
+    {
+      "Id": "ORD1034",
+      "reason": "Product damaged during shipping",
+      "store_name": "Gadget World",
+      "store_logo": "https://example.com/logos/gadgetworld.png",
+      "store_url": "https://gadgetworld.com",
+      "amount": 450.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "Smartwatch", "id": "PROD037", "price": 450.0, "quantity": 1 }
+      ]
+    },
+    {
+      "Id": "ORD1035",
+      "reason": "Incorrect size",
+      "store_name": "Shoe Palace",
+      "store_logo": "https://example.com/logos/shoepalace.png",
+      "store_url": "https://shoepalace.com",
+      "amount": 325.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        { "name": "High Heels", "id": "PROD038", "price": 65.0, "quantity": 5 }
+      ]
+    },
+    {
+      "Id": "ORD1036",
+      "reason": "Defective product",
+      "store_name": "Tech Haven",
+      "store_logo": "https://example.com/logos/techhaven.png",
+      "store_url": "https://techhaven.com",
+      "amount": 75.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "Mouse Pad", "id": "PROD039", "price": 15.0, "quantity": 5 }
+      ]
+    },
+    {
+      "Id": "ORD1037",
+      "reason": "Customer changed mind",
+      "store_name": "Home Essentials",
+      "store_logo": "https://example.com/logos/homeessentials.png",
+      "store_url": "https://homeessentials.com",
+      "amount": 95.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "Blender", "id": "PROD040", "price": 95.0, "quantity": 1 }
+      ]
+    },
+    {
+      "Id": "ORD1038",
+      "reason": "Wrong item shipped",
+      "store_name": "Fashion Hub",
+      "store_logo": "https://example.com/logos/fashionhub.png",
+      "store_url": "https://fashionhub.com",
+      "amount": 240.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Women's Jacket",
+          "id": "PROD041",
+          "price": 120.0,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "Id": "ORD1039",
+      "reason": "Product damaged during shipping",
+      "store_name": "Gadget World",
+      "store_logo": "https://example.com/logos/gadgetworld.png",
+      "store_url": "https://gadgetworld.com",
+      "amount": 600.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Gaming Laptop",
+          "id": "PROD042",
+          "price": 600.0,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "Id": "ORD1040",
+      "reason": "Incorrect size",
+      "store_name": "Shoe Palace",
+      "store_logo": "https://example.com/logos/shoepalace.png",
+      "store_url": "https://shoepalace.com",
+      "amount": 390.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        { "name": "Loafers", "id": "PROD043", "price": 65.0, "quantity": 6 }
+      ]
+    },
+    {
+      "Id": "ORD1041",
+      "reason": "Defective product",
+      "store_name": "Tech Haven",
+      "store_logo": "https://example.com/logos/techhaven.png",
+      "store_url": "https://techhaven.com",
+      "amount": 85.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "Webcam", "id": "PROD044", "price": 85.0, "quantity": 1 }
+      ]
+    },
+    {
+      "Id": "ORD1042",
+      "reason": "Customer changed mind",
+      "store_name": "Home Essentials",
+      "store_logo": "https://example.com/logos/homeessentials.png",
+      "store_url": "https://homeessentials.com",
+      "amount": 110.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Air Purifier",
+          "id": "PROD045",
+          "price": 110.0,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "Id": "ORD1043",
+      "reason": "Wrong item shipped",
+      "store_name": "Fashion Hub",
+      "store_logo": "https://example.com/logos/fashionhub.png",
+      "store_url": "https://fashionhub.com",
+      "amount": 280.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        { "name": "Men's Suit", "id": "PROD046", "price": 140.0, "quantity": 2 }
+      ]
+    },
+    {
+      "Id": "ORD1044",
+      "reason": "Product damaged during shipping",
+      "store_name": "Gadget World",
+      "store_logo": "https://example.com/logos/gadgetworld.png",
+      "store_url": "https://gadgetworld.com",
+      "amount": 700.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "4K Monitor", "id": "PROD047", "price": 700.0, "quantity": 1 }
+      ]
+    },
+    {
+      "Id": "ORD1045",
+      "reason": "Incorrect size",
+      "store_name": "Shoe Palace",
+      "store_logo": "https://example.com/logos/shoepalace.png",
+      "store_url": "https://shoepalace.com",
+      "amount": 455.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        { "name": "Slippers", "id": "PROD048", "price": 65.0, "quantity": 7 }
+      ]
+    },
+    {
+      "Id": "ORD1046",
+      "reason": "Defective product",
+      "store_name": "Tech Haven",
+      "store_logo": "https://example.com/logos/techhaven.png",
+      "store_url": "https://techhaven.com",
+      "amount": 95.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "Printer", "id": "PROD049", "price": 95.0, "quantity": 1 }
+      ]
+    },
+    {
+      "Id": "ORD1047",
+      "reason": "Customer changed mind",
+      "store_name": "Home Essentials",
+      "store_logo": "https://example.com/logos/homeessentials.png",
+      "store_url": "https://homeessentials.com",
+      "amount": 120.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Electric Grill",
+          "id": "PROD050",
+          "price": 120.0,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "Id": "ORD1048",
+      "reason": "Wrong item shipped",
+      "store_name": "Fashion Hub",
+      "store_logo": "https://example.com/logos/fashionhub.png",
+      "store_url": "https://fashionhub.com",
+      "amount": 320.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Women's Coat",
+          "id": "PROD051",
+          "price": 160.0,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "Id": "ORD1049",
+      "reason": "Product damaged during shipping",
+      "store_name": "Gadget World",
+      "store_logo": "https://example.com/logos/gadgetworld.png",
+      "store_url": "https://gadgetworld.com",
+      "amount": 800.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "VR Headset", "id": "PROD052", "price": 800.0, "quantity": 1 }
+      ]
+    },
+    {
+      "Id": "ORD1050",
+      "reason": "Incorrect size",
+      "store_name": "Shoe Palace",
+      "store_logo": "https://example.com/logos/shoepalace.png",
+      "store_url": "https://shoepalace.com",
+      "amount": 520.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        { "name": "Flip Flops", "id": "PROD053", "price": 65.0, "quantity": 8 }
+      ]
+    },
+    {
+      "Id": "ORD1051",
+      "reason": "Defective product",
+      "store_name": "Tech Haven",
+      "store_logo": "https://example.com/logos/techhaven.png",
+      "store_url": "https://techhaven.com",
+      "amount": 105.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "Scanner", "id": "PROD054", "price": 105.0, "quantity": 1 }
+      ]
+    },
+    {
+      "Id": "ORD1052",
+      "reason": "Customer changed mind",
+      "store_name": "Home Essentials",
+      "store_logo": "https://example.com/logos/homeessentials.png",
+      "store_url": "https://homeessentials.com",
+      "amount": 130.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Electric Oven",
+          "id": "PROD055",
+          "price": 130.0,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "Id": "ORD1053",
+      "reason": "Wrong item shipped",
+      "store_name": "Fashion Hub",
+      "store_logo": "https://example.com/logos/fashionhub.png",
+      "store_url": "https://fashionhub.com",
+      "amount": 360.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Men's Blazer",
+          "id": "PROD056",
+          "price": 180.0,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "Id": "ORD1054",
+      "reason": "Product damaged during shipping",
+      "store_name": "Gadget World",
+      "store_logo": "https://example.com/logos/gadgetworld.png",
+      "store_url": "https://gadgetworld.com",
+      "amount": 900.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Ultrawide Monitor",
+          "id": "PROD057",
+          "price": 900.0,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "Id": "ORD1055",
+      "reason": "Incorrect size",
+      "store_name": "Shoe Palace",
+      "store_logo": "https://example.com/logos/shoepalace.png",
+      "store_url": "https://shoepalace.com",
+      "amount": 585.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        { "name": "Sandals", "id": "PROD058", "price": 65.0, "quantity": 9 }
+      ]
+    },
+    {
+      "Id": "ORD1056",
+      "reason": "Defective product",
+      "store_name": "Tech Haven",
+      "store_logo": "https://example.com/logos/techhaven.png",
+      "store_url": "https://techhaven.com",
+      "amount": 115.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "Projector", "id": "PROD059", "price": 115.0, "quantity": 1 }
+      ]
+    },
+    {
+      "Id": "ORD1057",
+      "reason": "Customer changed mind",
+      "store_name": "Home Essentials",
+      "store_logo": "https://example.com/logos/homeessentials.png",
+      "store_url": "https://homeessentials.com",
+      "amount": 140.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Electric Stove",
+          "id": "PROD060",
+          "price": 140.0,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "Id": "ORD1058",
+      "reason": "Wrong item shipped",
+      "store_name": "Fashion Hub",
+      "store_logo": "https://example.com/logos/fashionhub.png",
+      "store_url": "https://fashionhub.com",
+      "amount": 400.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        {
+          "name": "Women's Blazer",
+          "id": "PROD061",
+          "price": 200.0,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "Id": "ORD1059",
+      "reason": "Product damaged during shipping",
+      "store_name": "Gadget World",
+      "store_logo": "https://example.com/logos/gadgetworld.png",
+      "store_url": "https://gadgetworld.com",
+      "amount": 1000.0,
+      "active": true,
+      "decision": null,
+      "Items": [
+        { "name": "Gaming PC", "id": "PROD062", "price": 1000.0, "quantity": 1 }
+      ]
+    },
+    {
+      "Id": "ORD1060",
+      "reason": "Incorrect size",
+      "store_name": "Shoe Palace",
+      "store_logo": "https://example.com/logos/shoepalace.png",
+      "store_url": "https://shoepalace.com",
+      "amount": 650.0,
+      "active": false,
+      "decision": null,
+      "Items": [
+        { "name": "Sneakers", "id": "PROD063", "price": 65.0, "quantity": 10 }
+      ]
+    }
+  ]
+}
