@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const SideBarContainer = styled.nav`
 box-sizing:border-box;
-width: ${(props) => (props.isOpen ? '280px' : '60px')};
+width: ${(props) => (props.isOpen ? '15%' : '60px')};
+min-width: ${(props) => (props.isOpen ? '15%' : '60px')};
+
 background-color:#F6F6F6;
 height:100vh;
 display:flex;
@@ -18,6 +20,10 @@ text-wrap:nowrap;
 
 
 @media(max-width:768px){
+    z-index: 9999;
+    grid-row: 2;
+    top: auto;
+    bottom: 0;
 width:100%;
 padding:5px;
 height:auto

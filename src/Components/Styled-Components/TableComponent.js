@@ -13,29 +13,34 @@ export const Table = styled.table`
   }
   td {
     font-weight: 600;
+    img{
+    width:2rem;
+    }
   }
   th {
     font-weight: 700;
   }
   caption {
     text-align: left;
-    background: #d371e4ab;
+    background-color: ##ffffffab;
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: #45094e;
+    color:#363636;
   }
   th {
-    background: #d535e745;
+    background-color: #9797971c;
     text-align: start;
-    color: #4f4350;
+    color: #363636;
+    border-color:transparent;
   }
   tr {
-    color: #240031;
+    background-color: white;
+    // border-bottom:1px solid #e5e5e5;
+    border-bottom:  1px solid #e5e5e5
+
   }
-  tr:nth-of-type(2n) {
-    background: #b942c417;
-  }
+ 
   @media (max-width: 650px) {
     th {
       display: none;

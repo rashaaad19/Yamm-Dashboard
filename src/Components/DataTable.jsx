@@ -1,19 +1,15 @@
+import useFetch from "../hooks/useFetch";
 import { Table } from "./Styled-Components/TableComponent";
 
 const DataTable = () => {
-  const isLoading = false;
-  const employeeArray = [
-    {
-      id: 1,
-      firstName: "John",
-      lastName: "Doe",
-      email: "blabla@blabla.com",
-    },
-  ];
+
+  const { data:orders, loading, error } = useFetch("http://localhost:3000/orders");
+
+
   return (
     <Table>
-      <caption>Employees</caption>
-      {isLoading ? (
+      <caption>Refund Orders</caption>
+      {loading ? (
         <tbody>
           <tr>
             {/* centering the spinner in the middle of table */}
@@ -22,7 +18,6 @@ const DataTable = () => {
               style={{ display: "flex", justifyContent: "center" }}
               id="loadingCell"
             >
-              {/* <MoonLoader color="#811493" /> */}
               <h1>Loading...</h1>
             </td>
           </tr>
@@ -31,28 +26,35 @@ const DataTable = () => {
         <tbody>
           <tr>
             <th>ID</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Salary</th>
-            <th>Date</th>
-            <th>Actions</th>
+            <th>Reason</th>
+            <th>Store Name</th>
+            <th>Store Logo</th>
+            <th>Store Website</th>
+            <th>Amount</th>
+            <th>Active</th>
+            <th>Decision</th>
+            <th>Items</th>
+
           </tr>
 
-          {/* conditonally rendering the employees data */}
+          {/* conditonally rendering the orders */}
 
-          {employeeArray.length > 0 ? (
-            employeeArray.map((data) => (
+          {orders.length>0 ? (
+            orders.map((data) => (
               <tr key={data.id}>
                 <td>{data.id}</td>
-                <td>{data.firstName}</td>
-                <td>{data.lastName}</td>
-                <td>{data.email}</td>
-                <td>{data.salary}</td>
-                <td>{data.date}</td>
-                <td>
+                <td>{data.reason}</td>
+                <td>{data.store_name}</td>
+                <td><img src={data.store_logo}/></td>
+                <td>{data.store_url}</td>
+                <td>{data.amount}</td>
+                <td>{data.active}</td>
+                <td>{data.decision}</td>
+                <td>{data.items.length}</td>
+
+                {/* <td>
                   <div>
-                    {/* <Button
+                    <Button
                       component={Link}
                       to={`edit/${data.id}`}
                       variant="outlined"
@@ -69,15 +71,15 @@ const DataTable = () => {
                       }}
                     >
                       Delete
-                    </Button> */}
+                    </Button>
                   </div>
-                </td>
+                </td> */}
               </tr>
             ))
           ) : (
             <tr>
               <td colSpan="7" style={{ textAlign: "center" }}>
-                There are no employees yet.
+                There are no orders.
               </td>
             </tr>
           )}
