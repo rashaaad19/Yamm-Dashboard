@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import DataTable from "./Components/DataTable";
 import Root from "./Pages/Root";
+import RefundOrders from "./Pages/RefundOrders";
 
 function App() {
   let router = createBrowserRouter([
@@ -11,7 +12,7 @@ function App() {
       children: [
         {
           path: "",
-          Component: DataTable,
+          Component: RefundOrders,
         },
       ],
     },

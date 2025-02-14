@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const TableContainer = styled.div`
 flex-grow:1;
       display: block;
-      // max-width:auto;
     overflow-x: auto;
     white-space: nowrap;
     max-height:100vh;
