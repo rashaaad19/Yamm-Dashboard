@@ -31,8 +31,6 @@ export const Table = styled.table`
     font-weight: 700;
   }
   caption {
-  position:sticky;
-  top:0;
     text-align: left;
     background-color: #ffffffab;
     font-size: 1.5rem;
