@@ -1,11 +1,21 @@
 import styled from "styled-components";
 
+export const TableContainer = styled.div`
+flex-grow:1;
+      display: block;
+      // max-width:auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    max-height:100vh;
+
+`
 export const Table = styled.table`
   width: 100%;
   background-color: white;
   padding: 1rem;
   color: #323232;
   border-collapse: collapse;
+
   caption,
   th,
   td {
@@ -21,12 +31,17 @@ export const Table = styled.table`
     font-weight: 700;
   }
   caption {
+  position:sticky;
+  top:0;
     text-align: left;
-    background-color: ##ffffffab;
+    background-color: #ffffffab;
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
     color:#363636;
+    border-bottom:1px solid #e5e5e5;
+    padding-bottom:0.2em;
+    margin-bottom:1rem;
   }
   th {
     background-color: #9797971c;

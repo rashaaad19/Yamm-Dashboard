@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const SideBarContainer = styled.nav`
 box-sizing:border-box;
-width: ${(props) => (props.isOpen ? '15%' : '60px')};
-min-width: ${(props) => (props.isOpen ? '15%' : '60px')};
+width: ${(props) => (props.isOpen ? '240px' : '60px')};
+min-width: ${(props) => (props.isOpen ? '200px' : '60px')};
 
 background-color:#F6F6F6;
 height:100vh;
