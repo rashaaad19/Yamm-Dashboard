@@ -1,36 +1,37 @@
 import React from "react";
+import { PaginaitonButton, PaginationComponent, PaginationSpan } from "./Styled-Components/PaginationComponent";
 
 const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   return (
-    <div>
-      <button
+    <PaginationComponent>
+      <PaginaitonButton
         onClick={() => onPageChange(1)}
         disabled={currentPage === 1}
       >
         First
-      </button>
-      <button
+      </PaginaitonButton>
+      <PaginaitonButton
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
       >
         Previous
-      </button>
-      <span>
+      </PaginaitonButton>
+      <PaginationSpan>
         Page {currentPage} of {totalPages}
-      </span>
-      <button
+      </PaginationSpan>
+      <PaginaitonButton
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
       >
         Next
-      </button>
-      <button
+      </PaginaitonButton>
+      <PaginaitonButton
         onClick={() => onPageChange(totalPages)}
         disabled={currentPage === totalPages}
       >
         Last
-      </button>
-    </div>
+      </PaginaitonButton>
+    </PaginationComponent>
   );
 };
 

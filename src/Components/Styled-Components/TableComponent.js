@@ -16,6 +16,7 @@ export const Table = styled.table`
   color: #323232;
   border-collapse: collapse;
 
+
   caption,
   th,
   td {
@@ -54,7 +55,7 @@ export const Table = styled.table`
 
   }
  
-  @media (max-width: 650px) {
+  @media (max-width: 800px) {
     th {
       display: none;
     }
@@ -63,6 +64,7 @@ export const Table = styled.table`
       grid-template-columns: 15ch auto;
       padding: 0.5rem 1rem;
     }
+  
     td:first-child {
       padding-top: 2rem;
     }
@@ -84,22 +86,29 @@ export const Table = styled.table`
       content: "ID";
     }
     td:nth-of-type(2)::before {
-      content: "first name";
+      content: "Reason";
     }
     td:nth-of-type(3)::before {
-      content: "last name";
+      content: "Store Name";
     }
     td:nth-of-type(4)::before {
-      content: "email";
+      content: "Store Logo";
     }
     td:nth-of-type(5)::before {
-      content: "salary";
+      content: "Store Website";
     }
     td:nth-of-type(6)::before {
-      content: "date";
+      content: "Amount";
     }
     td:nth-of-type(7)::before {
-      content: "actions";
+      content: "Active";
     }
+          td:nth-of-type(8)::before {
+      content: "Decision";
+    }
+    td:nth-of-type(9)::before {
+      content: "Items";
+    }
+
   }
 `;

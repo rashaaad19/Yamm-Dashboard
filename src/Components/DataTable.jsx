@@ -89,20 +89,15 @@ const DataTable = () => {
             </tbody>
 
             {/* Pagination Controls */}
-            <tfoot>
-              <tr>
-                <td colSpan="9" style={{ textAlign: "center" }}>
-                  <Pagination
-                    currentPage={currentPage}
-                    totalPages={totalPages}
-                    onPageChange={handlePageChange}
-                  />
-                </td>
-              </tr>
-            </tfoot>
           </>
         )}
       </Table>
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={handlePageChange}
+        
+      />
     </TableContainer>
   );
 };
