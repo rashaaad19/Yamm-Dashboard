@@ -12,7 +12,7 @@
   -moz-osx-font-smoothing: grayscale;
   font-family: roboto;
 }
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -23,12 +23,12 @@ ol {
   padding: 0;
   list-style: none;
 }
-html{
+html {
   font-family: "Poppins", serif;
   line-height: 1.5rem;
 }
-body{
+body {
   min-height: 100vh;
   min-height: 100dvh;
-  background-color:white;
+  background-color: #f0f2f5;
 }

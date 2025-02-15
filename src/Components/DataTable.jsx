@@ -94,8 +94,7 @@ const DataTable = ({
                         id={data.id}
                         handleStatusChange={handleStatusChange}
                       />
-                      <Link to={"/itemProfile"} className="navigate-action">
-                        {" "}
+                      <Link to={data.id} className="navigate-action">
                         <FaEye />
                       </Link>
                     </div>

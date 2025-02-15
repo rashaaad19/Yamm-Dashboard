@@ -32,14 +32,13 @@ export const Table = styled.table`
   }
   caption {
     text-align: left;
-    background-color: #ffffffab;
+    background-color: white;
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
     color:#363636;
     border-bottom:1px solid #e5e5e5;
-    padding-bottom:0.2em;
-    margin-bottom:1rem;
+    padding-bottom:2rem;
   }
   th {
     background-color: #9797971c;
@@ -126,6 +125,7 @@ export const Table = styled.table`
     display:flex;
     align-items:center;
     gap:10px;
+    width:fit-content;
     .navigate-action{
       color:black;
       padding-top:5px;

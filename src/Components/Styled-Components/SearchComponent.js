@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const SearchContainer = styled.div`
 display:flex;
 min-width:250px;
+padding-top:10px;
 svg{
 position: relative;
 color: #888;
