@@ -38,16 +38,16 @@ This is a simple dashboard task submitted as part of an assignment. The project 
 
 <div align="center">
 
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/2f76c3c9-22be-44f0-a57d-baef2705fd81)
 <br>
 <br>
 ![image](https://github.com/user-attachments/assets/db0910f9-d729-4179-b68f-9b10a25cdbb6)
 <br>
 <br>
-![alt text](image-3.png)
+![image](https://github.com/user-attachments/assets/dcae9d12-de8f-4a87-b65c-eded01e7f0b0)
 <br>
 <br>
-![alt text](image-4.png)
+![image](https://github.com/user-attachments/assets/270125c3-7596-4219-9abf-56ca59e76411)
 
 </div>
 
