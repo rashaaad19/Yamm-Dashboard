@@ -7,8 +7,8 @@
       "store_logo": "https://icon-library.com/images/technology-icon-png/technology-icon-png-0.jpg",
       "store_url": "https://techhaven.com",
       "amount": 120.5,
-      "active": true,
-      "decision": null,
+      "active": false,
+      "decision": "Escalate",
       "items": [
         {
           "name": "Wireless Mouse",
@@ -32,7 +32,7 @@
       "store_url": "https://fashionhub.com",
       "amount": 89.99,
       "active": false,
-      "decision": null,
+      "decision": "Escalate",
       "items": [
         {
           "name": "Men's T-Shirt",
@@ -54,15 +54,20 @@
       "store_name": "Home Essentials",
       "store_logo": "https://images.scalebranding.com/home-shop-logo-846db8c3-82fb-435d-af81-e3cb2f85a597.jpg",
       "store_url": "https://homeessentials.com",
-      "amount": 45.0,
+      "amount": 45,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "Blender", "id": "PROD005", "price": 35.0, "quantity": 1 },
+        {
+          "name": "Blender",
+          "id": "PROD005",
+          "price": 35,
+          "quantity": 1
+        },
         {
           "name": "Coffee Maker",
           "id": "PROD006",
-          "price": 10.0,
+          "price": 10,
           "quantity": 1
         }
       ]
@@ -73,11 +78,16 @@
       "store_name": "Gadget World",
       "store_logo": "https://images-platform.99static.com/nOoFR6LUNVrevkzBaOL8uwhH5So=/201x17:854x670/500x500/top/smart/99designs-contests-attachments/70/70212/attachment_70212351",
       "store_url": "https://gadgetworld.com",
-      "amount": 200.0,
+      "amount": 200,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "Smartphone", "id": "PROD007", "price": 200.0, "quantity": 1 }
+        {
+          "name": "Smartphone",
+          "id": "PROD007",
+          "price": 200,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -86,14 +96,14 @@
       "store_name": "Shoe Palace",
       "store_logo": "https://tager.drmediawy.com/wp-content/uploads/2024/05/5499206.png",
       "store_url": "https://shoepalace.com",
-      "amount": 65.0,
+      "amount": 65,
       "active": false,
       "decision": null,
       "items": [
         {
           "name": "Running Shoes",
           "id": "PROD008",
-          "price": 65.0,
+          "price": 65,
           "quantity": 1
         }
       ]
@@ -122,11 +132,16 @@
       "store_name": "Home Essentials",
       "store_logo": "https://images.scalebranding.com/home-shop-logo-846db8c3-82fb-435d-af81-e3cb2f85a597.jpg",
       "store_url": "https://homeessentials.com",
-      "amount": 90.0,
+      "amount": 90,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "Air Fryer", "id": "PROD010", "price": 90.0, "quantity": 1 }
+        {
+          "name": "Air Fryer",
+          "id": "PROD010",
+          "price": 90,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -135,14 +150,14 @@
       "store_name": "Fashion Hub",
       "store_logo": "https://w7.pngwing.com/pngs/39/910/png-transparent-zara-fashion-clothes-clothing-brands-and-logos-icon-thumbnail.png",
       "store_url": "https://fashionhub.com",
-      "amount": 120.0,
+      "amount": 120,
       "active": false,
       "decision": null,
       "items": [
         {
           "name": "Women's Dress",
           "id": "PROD011",
-          "price": 60.0,
+          "price": 60,
           "quantity": 2
         }
       ]
@@ -153,11 +168,16 @@
       "store_name": "Gadget World",
       "store_logo": "https://images-platform.99static.com/nOoFR6LUNVrevkzBaOL8uwhH5So=/201x17:854x670/500x500/top/smart/99designs-contests-attachments/70/70212/attachment_70212351",
       "store_url": "https://gadgetworld.com",
-      "amount": 300.0,
+      "amount": 300,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "Laptop", "id": "PROD012", "price": 300.0, "quantity": 1 }
+        {
+          "name": "Laptop",
+          "id": "PROD012",
+          "price": 300,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -166,14 +186,14 @@
       "store_name": "Shoe Palace",
       "store_logo": "https://tager.drmediawy.com/wp-content/uploads/2024/05/5499206.png",
       "store_url": "https://shoepalace.com",
-      "amount": 130.0,
+      "amount": 130,
       "active": false,
       "decision": null,
       "items": [
         {
           "name": "Casual Shoes",
           "id": "PROD013",
-          "price": 65.0,
+          "price": 65,
           "quantity": 2
         }
       ]
@@ -184,11 +204,16 @@
       "store_name": "Tech Haven",
       "store_logo": "https://icon-library.com/images/technology-icon-png/technology-icon-png-0.jpg",
       "store_url": "https://techhaven.com",
-      "amount": 75.0,
+      "amount": 75,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "USB-C Cable", "id": "PROD014", "price": 15.0, "quantity": 5 }
+        {
+          "name": "USB-C Cable",
+          "id": "PROD014",
+          "price": 15,
+          "quantity": 5
+        }
       ]
     },
     {
@@ -197,14 +222,14 @@
       "store_name": "Home Essentials",
       "store_logo": "https://images.scalebranding.com/home-shop-logo-846db8c3-82fb-435d-af81-e3cb2f85a597.jpg",
       "store_url": "https://homeessentials.com",
-      "amount": 45.0,
+      "amount": 45,
       "active": true,
       "decision": null,
       "items": [
         {
           "name": "Electric Kettle",
           "id": "PROD015",
-          "price": 45.0,
+          "price": 45,
           "quantity": 1
         }
       ]
@@ -215,14 +240,14 @@
       "store_name": "Fashion Hub",
       "store_logo": "https://w7.pngwing.com/pngs/39/910/png-transparent-zara-fashion-clothes-clothing-brands-and-logos-icon-thumbnail.png",
       "store_url": "https://fashionhub.com",
-      "amount": 80.0,
+      "amount": 80,
       "active": false,
       "decision": null,
       "items": [
         {
           "name": "Men's Jacket",
           "id": "PROD016",
-          "price": 80.0,
+          "price": 80,
           "quantity": 1
         }
       ]
@@ -233,11 +258,16 @@
       "store_name": "Gadget World",
       "store_logo": "https://images-platform.99static.com/nOoFR6LUNVrevkzBaOL8uwhH5So=/201x17:854x670/500x500/top/smart/99designs-contests-attachments/70/70212/attachment_70212351",
       "store_url": "https://gadgetworld.com",
-      "amount": 250.0,
+      "amount": 250,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "Tablet", "id": "PROD017", "price": 250.0, "quantity": 1 }
+        {
+          "name": "Tablet",
+          "id": "PROD017",
+          "price": 250,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -246,14 +276,14 @@
       "store_name": "Shoe Palace",
       "store_logo": "https://tager.drmediawy.com/wp-content/uploads/2024/05/5499206.png",
       "store_url": "https://shoepalace.com",
-      "amount": 195.0,
+      "amount": 195,
       "active": false,
       "decision": null,
       "items": [
         {
           "name": "Formal Shoes",
           "id": "PROD018",
-          "price": 65.0,
+          "price": 65,
           "quantity": 3
         }
       ]
@@ -264,14 +294,14 @@
       "store_name": "Tech Haven",
       "store_logo": "https://icon-library.com/images/technology-icon-png/technology-icon-png-0.jpg",
       "store_url": "https://techhaven.com",
-      "amount": 180.0,
+      "amount": 180,
       "active": true,
       "decision": null,
       "items": [
         {
           "name": "Wireless Earbuds",
           "id": "PROD019",
-          "price": 60.0,
+          "price": 60,
           "quantity": 3
         }
       ]
@@ -282,11 +312,16 @@
       "store_name": "Home Essentials",
       "store_logo": "https://images.scalebranding.com/home-shop-logo-846db8c3-82fb-435d-af81-e3cb2f85a597.jpg",
       "store_url": "https://homeessentials.com",
-      "amount": 55.0,
+      "amount": 55,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "Toaster", "id": "PROD020", "price": 55.0, "quantity": 1 }
+        {
+          "name": "Toaster",
+          "id": "PROD020",
+          "price": 55,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -295,14 +330,14 @@
       "store_name": "Fashion Hub",
       "store_logo": "https://w7.pngwing.com/pngs/39/910/png-transparent-zara-fashion-clothes-clothing-brands-and-logos-icon-thumbnail.png",
       "store_url": "https://fashionhub.com",
-      "amount": 140.0,
+      "amount": 140,
       "active": false,
       "decision": null,
       "items": [
         {
           "name": "Women's Blouse",
           "id": "PROD021",
-          "price": 70.0,
+          "price": 70,
           "quantity": 2
         }
       ]
@@ -313,14 +348,14 @@
       "store_name": "Gadget World",
       "store_logo": "https://images-platform.99static.com/nOoFR6LUNVrevkzBaOL8uwhH5So=/201x17:854x670/500x500/top/smart/99designs-contests-attachments/70/70212/attachment_70212351",
       "store_url": "https://gadgetworld.com",
-      "amount": 400.0,
+      "amount": 400,
       "active": true,
       "decision": null,
       "items": [
         {
           "name": "Gaming Console",
           "id": "PROD022",
-          "price": 400.0,
+          "price": 400,
           "quantity": 1
         }
       ]
@@ -331,11 +366,16 @@
       "store_name": "Shoe Palace",
       "store_logo": "https://tager.drmediawy.com/wp-content/uploads/2024/05/5499206.png",
       "store_url": "https://shoepalace.com",
-      "amount": 260.0,
+      "amount": 260,
       "active": false,
       "decision": null,
       "items": [
-        { "name": "Boots", "id": "PROD023", "price": 130.0, "quantity": 2 }
+        {
+          "name": "Boots",
+          "id": "PROD023",
+          "price": 130,
+          "quantity": 2
+        }
       ]
     },
     {
@@ -344,11 +384,16 @@
       "store_name": "Tech Haven",
       "store_logo": "https://icon-library.com/images/technology-icon-png/technology-icon-png-0.jpg",
       "store_url": "https://techhaven.com",
-      "amount": 95.0,
+      "amount": 95,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "Power Bank", "id": "PROD024", "price": 95.0, "quantity": 1 }
+        {
+          "name": "Power Bank",
+          "id": "PROD024",
+          "price": 95,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -357,14 +402,14 @@
       "store_name": "Home Essentials",
       "store_logo": "https://images.scalebranding.com/home-shop-logo-846db8c3-82fb-435d-af81-e3cb2f85a597.jpg",
       "store_url": "https://homeessentials.com",
-      "amount": 70.0,
+      "amount": 70,
       "active": true,
       "decision": null,
       "items": [
         {
           "name": "Vacuum Cleaner",
           "id": "PROD025",
-          "price": 70.0,
+          "price": 70,
           "quantity": 1
         }
       ]
@@ -375,14 +420,14 @@
       "store_name": "Fashion Hub",
       "store_logo": "https://w7.pngwing.com/pngs/39/910/png-transparent-zara-fashion-clothes-clothing-brands-and-logos-icon-thumbnail.png",
       "store_url": "https://fashionhub.com",
-      "amount": 160.0,
+      "amount": 160,
       "active": false,
       "decision": null,
       "items": [
         {
           "name": "Men's Sweater",
           "id": "PROD026",
-          "price": 80.0,
+          "price": 80,
           "quantity": 2
         }
       ]
@@ -393,11 +438,16 @@
       "store_name": "Gadget World",
       "store_logo": "https://images-platform.99static.com/nOoFR6LUNVrevkzBaOL8uwhH5So=/201x17:854x670/500x500/top/smart/99designs-contests-attachments/70/70212/attachment_70212351",
       "store_url": "https://gadgetworld.com",
-      "amount": 500.0,
+      "amount": 500,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "Smart TV", "id": "PROD027", "price": 500.0, "quantity": 1 }
+        {
+          "name": "Smart TV",
+          "id": "PROD027",
+          "price": 500,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -406,11 +456,16 @@
       "store_name": "Shoe Palace",
       "store_logo": "https://tager.drmediawy.com/wp-content/uploads/2024/05/5499206.png",
       "store_url": "https://shoepalace.com",
-      "amount": 195.0,
+      "amount": 195,
       "active": false,
       "decision": null,
       "items": [
-        { "name": "Sneakers", "id": "PROD028", "price": 65.0, "quantity": 3 }
+        {
+          "name": "Sneakers",
+          "id": "PROD028",
+          "price": 65,
+          "quantity": 3
+        }
       ]
     },
     {
@@ -419,11 +474,16 @@
       "store_name": "Tech Haven",
       "store_logo": "https://icon-library.com/images/technology-icon-png/technology-icon-png-0.jpg",
       "store_url": "https://techhaven.com",
-      "amount": 110.0,
+      "amount": 110,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "HDMI Cable", "id": "PROD029", "price": 10.0, "quantity": 11 }
+        {
+          "name": "HDMI Cable",
+          "id": "PROD029",
+          "price": 10,
+          "quantity": 11
+        }
       ]
     },
     {
@@ -432,11 +492,16 @@
       "store_name": "Home Essentials",
       "store_logo": "https://images.scalebranding.com/home-shop-logo-846db8c3-82fb-435d-af81-e3cb2f85a597.jpg",
       "store_url": "https://homeessentials.com",
-      "amount": 85.0,
+      "amount": 85,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "Microwave", "id": "PROD030", "price": 85.0, "quantity": 1 }
+        {
+          "name": "Microwave",
+          "id": "PROD030",
+          "price": 85,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -445,14 +510,14 @@
       "store_name": "Fashion Hub",
       "store_logo": "https://w7.pngwing.com/pngs/39/910/png-transparent-zara-fashion-clothes-clothing-brands-and-logos-icon-thumbnail.png",
       "store_url": "https://fashionhub.com",
-      "amount": 180.0,
+      "amount": 180,
       "active": false,
       "decision": null,
       "items": [
         {
           "name": "Women's Skirt",
           "id": "PROD031",
-          "price": 90.0,
+          "price": 90,
           "quantity": 2
         }
       ]
@@ -463,11 +528,16 @@
       "store_name": "Gadget World",
       "store_logo": "https://images-platform.99static.com/nOoFR6LUNVrevkzBaOL8uwhH5So=/201x17:854x670/500x500/top/smart/99designs-contests-attachments/70/70212/attachment_70212351",
       "store_url": "https://gadgetworld.com",
-      "amount": 350.0,
+      "amount": 350,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "Drone", "id": "PROD032", "price": 350.0, "quantity": 1 }
+        {
+          "name": "Drone",
+          "id": "PROD032",
+          "price": 350,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -476,11 +546,16 @@
       "store_name": "Shoe Palace",
       "store_logo": "https://tager.drmediawy.com/wp-content/uploads/2024/05/5499206.png",
       "store_url": "https://shoepalace.com",
-      "amount": 260.0,
+      "amount": 260,
       "active": false,
       "decision": null,
       "items": [
-        { "name": "Sandals", "id": "PROD033", "price": 65.0, "quantity": 4 }
+        {
+          "name": "Sandals",
+          "id": "PROD033",
+          "price": 65,
+          "quantity": 4
+        }
       ]
     },
     {
@@ -489,14 +564,14 @@
       "store_name": "Tech Haven",
       "store_logo": "https://icon-library.com/images/technology-icon-png/technology-icon-png-0.jpg",
       "store_url": "https://techhaven.com",
-      "amount": 130.0,
+      "amount": 130,
       "active": true,
       "decision": null,
       "items": [
         {
           "name": "External Hard Drive",
           "id": "PROD034",
-          "price": 130.0,
+          "price": 130,
           "quantity": 1
         }
       ]
@@ -507,11 +582,16 @@
       "store_name": "Home Essentials",
       "store_logo": "https://images.scalebranding.com/home-shop-logo-846db8c3-82fb-435d-af81-e3cb2f85a597.jpg",
       "store_url": "https://homeessentials.com",
-      "amount": 60.0,
+      "amount": 60,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "Rice Cooker", "id": "PROD035", "price": 60.0, "quantity": 1 }
+        {
+          "name": "Rice Cooker",
+          "id": "PROD035",
+          "price": 60,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -520,11 +600,16 @@
       "store_name": "Fashion Hub",
       "store_logo": "https://w7.pngwing.com/pngs/39/910/png-transparent-zara-fashion-clothes-clothing-brands-and-logos-icon-thumbnail.png",
       "store_url": "https://fashionhub.com",
-      "amount": 200.0,
+      "amount": 200,
       "active": false,
       "decision": null,
       "items": [
-        { "name": "Men's Coat", "id": "PROD036", "price": 100.0, "quantity": 2 }
+        {
+          "name": "Men's Coat",
+          "id": "PROD036",
+          "price": 100,
+          "quantity": 2
+        }
       ]
     },
     {
@@ -533,11 +618,16 @@
       "store_name": "Gadget World",
       "store_logo": "https://images-platform.99static.com/nOoFR6LUNVrevkzBaOL8uwhH5So=/201x17:854x670/500x500/top/smart/99designs-contests-attachments/70/70212/attachment_70212351",
       "store_url": "https://gadgetworld.com",
-      "amount": 450.0,
+      "amount": 450,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "Smartwatch", "id": "PROD037", "price": 450.0, "quantity": 1 }
+        {
+          "name": "Smartwatch",
+          "id": "PROD037",
+          "price": 450,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -546,11 +636,16 @@
       "store_name": "Shoe Palace",
       "store_logo": "https://tager.drmediawy.com/wp-content/uploads/2024/05/5499206.png",
       "store_url": "https://shoepalace.com",
-      "amount": 325.0,
+      "amount": 325,
       "active": false,
       "decision": null,
       "items": [
-        { "name": "High Heels", "id": "PROD038", "price": 65.0, "quantity": 5 }
+        {
+          "name": "High Heels",
+          "id": "PROD038",
+          "price": 65,
+          "quantity": 5
+        }
       ]
     },
     {
@@ -559,11 +654,16 @@
       "store_name": "Tech Haven",
       "store_logo": "https://icon-library.com/images/technology-icon-png/technology-icon-png-0.jpg",
       "store_url": "https://techhaven.com",
-      "amount": 75.0,
+      "amount": 75,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "Mouse Pad", "id": "PROD039", "price": 15.0, "quantity": 5 }
+        {
+          "name": "Mouse Pad",
+          "id": "PROD039",
+          "price": 15,
+          "quantity": 5
+        }
       ]
     },
     {
@@ -572,11 +672,16 @@
       "store_name": "Home Essentials",
       "store_logo": "https://images.scalebranding.com/home-shop-logo-846db8c3-82fb-435d-af81-e3cb2f85a597.jpg",
       "store_url": "https://homeessentials.com",
-      "amount": 95.0,
+      "amount": 95,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "Blender", "id": "PROD040", "price": 95.0, "quantity": 1 }
+        {
+          "name": "Blender",
+          "id": "PROD040",
+          "price": 95,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -585,14 +690,14 @@
       "store_name": "Fashion Hub",
       "store_logo": "https://w7.pngwing.com/pngs/39/910/png-transparent-zara-fashion-clothes-clothing-brands-and-logos-icon-thumbnail.png",
       "store_url": "https://fashionhub.com",
-      "amount": 240.0,
+      "amount": 240,
       "active": false,
       "decision": null,
       "items": [
         {
           "name": "Women's Jacket",
           "id": "PROD041",
-          "price": 120.0,
+          "price": 120,
           "quantity": 2
         }
       ]
@@ -603,14 +708,14 @@
       "store_name": "Gadget World",
       "store_logo": "https://images-platform.99static.com/nOoFR6LUNVrevkzBaOL8uwhH5So=/201x17:854x670/500x500/top/smart/99designs-contests-attachments/70/70212/attachment_70212351",
       "store_url": "https://gadgetworld.com",
-      "amount": 600.0,
+      "amount": 600,
       "active": true,
       "decision": null,
       "items": [
         {
           "name": "Gaming Laptop",
           "id": "PROD042",
-          "price": 600.0,
+          "price": 600,
           "quantity": 1
         }
       ]
@@ -621,11 +726,16 @@
       "store_name": "Shoe Palace",
       "store_logo": "https://tager.drmediawy.com/wp-content/uploads/2024/05/5499206.png",
       "store_url": "https://shoepalace.com",
-      "amount": 390.0,
+      "amount": 390,
       "active": false,
       "decision": null,
       "items": [
-        { "name": "Loafers", "id": "PROD043", "price": 65.0, "quantity": 6 }
+        {
+          "name": "Loafers",
+          "id": "PROD043",
+          "price": 65,
+          "quantity": 6
+        }
       ]
     },
     {
@@ -634,11 +744,16 @@
       "store_name": "Tech Haven",
       "store_logo": "https://icon-library.com/images/technology-icon-png/technology-icon-png-0.jpg",
       "store_url": "https://techhaven.com",
-      "amount": 85.0,
+      "amount": 85,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "Webcam", "id": "PROD044", "price": 85.0, "quantity": 1 }
+        {
+          "name": "Webcam",
+          "id": "PROD044",
+          "price": 85,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -647,14 +762,14 @@
       "store_name": "Home Essentials",
       "store_logo": "https://images.scalebranding.com/home-shop-logo-846db8c3-82fb-435d-af81-e3cb2f85a597.jpg",
       "store_url": "https://homeessentials.com",
-      "amount": 110.0,
+      "amount": 110,
       "active": true,
       "decision": null,
       "items": [
         {
           "name": "Air Purifier",
           "id": "PROD045",
-          "price": 110.0,
+          "price": 110,
           "quantity": 1
         }
       ]
@@ -665,11 +780,16 @@
       "store_name": "Fashion Hub",
       "store_logo": "https://w7.pngwing.com/pngs/39/910/png-transparent-zara-fashion-clothes-clothing-brands-and-logos-icon-thumbnail.png",
       "store_url": "https://fashionhub.com",
-      "amount": 280.0,
+      "amount": 280,
       "active": false,
       "decision": null,
       "items": [
-        { "name": "Men's Suit", "id": "PROD046", "price": 140.0, "quantity": 2 }
+        {
+          "name": "Men's Suit",
+          "id": "PROD046",
+          "price": 140,
+          "quantity": 2
+        }
       ]
     },
     {
@@ -678,11 +798,16 @@
       "store_name": "Gadget World",
       "store_logo": "https://images-platform.99static.com/nOoFR6LUNVrevkzBaOL8uwhH5So=/201x17:854x670/500x500/top/smart/99designs-contests-attachments/70/70212/attachment_70212351",
       "store_url": "https://gadgetworld.com",
-      "amount": 700.0,
+      "amount": 700,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "4K Monitor", "id": "PROD047", "price": 700.0, "quantity": 1 }
+        {
+          "name": "4K Monitor",
+          "id": "PROD047",
+          "price": 700,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -691,11 +816,16 @@
       "store_name": "Shoe Palace",
       "store_logo": "https://tager.drmediawy.com/wp-content/uploads/2024/05/5499206.png",
       "store_url": "https://shoepalace.com",
-      "amount": 455.0,
+      "amount": 455,
       "active": false,
       "decision": null,
       "items": [
-        { "name": "Slippers", "id": "PROD048", "price": 65.0, "quantity": 7 }
+        {
+          "name": "Slippers",
+          "id": "PROD048",
+          "price": 65,
+          "quantity": 7
+        }
       ]
     },
     {
@@ -704,11 +834,16 @@
       "store_name": "Tech Haven",
       "store_logo": "https://icon-library.com/images/technology-icon-png/technology-icon-png-0.jpg",
       "store_url": "https://techhaven.com",
-      "amount": 95.0,
+      "amount": 95,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "Printer", "id": "PROD049", "price": 95.0, "quantity": 1 }
+        {
+          "name": "Printer",
+          "id": "PROD049",
+          "price": 95,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -717,14 +852,14 @@
       "store_name": "Home Essentials",
       "store_logo": "https://images.scalebranding.com/home-shop-logo-846db8c3-82fb-435d-af81-e3cb2f85a597.jpg",
       "store_url": "https://homeessentials.com",
-      "amount": 120.0,
+      "amount": 120,
       "active": true,
       "decision": null,
       "items": [
         {
           "name": "Electric Grill",
           "id": "PROD050",
-          "price": 120.0,
+          "price": 120,
           "quantity": 1
         }
       ]
@@ -735,14 +870,14 @@
       "store_name": "Fashion Hub",
       "store_logo": "https://w7.pngwing.com/pngs/39/910/png-transparent-zara-fashion-clothes-clothing-brands-and-logos-icon-thumbnail.png",
       "store_url": "https://fashionhub.com",
-      "amount": 320.0,
+      "amount": 320,
       "active": false,
       "decision": null,
       "items": [
         {
           "name": "Women's Coat",
           "id": "PROD051",
-          "price": 160.0,
+          "price": 160,
           "quantity": 2
         }
       ]
@@ -753,11 +888,16 @@
       "store_name": "Gadget World",
       "store_logo": "https://images-platform.99static.com/nOoFR6LUNVrevkzBaOL8uwhH5So=/201x17:854x670/500x500/top/smart/99designs-contests-attachments/70/70212/attachment_70212351",
       "store_url": "https://gadgetworld.com",
-      "amount": 800.0,
+      "amount": 800,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "VR Headset", "id": "PROD052", "price": 800.0, "quantity": 1 }
+        {
+          "name": "VR Headset",
+          "id": "PROD052",
+          "price": 800,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -766,11 +906,16 @@
       "store_name": "Shoe Palace",
       "store_logo": "https://tager.drmediawy.com/wp-content/uploads/2024/05/5499206.png",
       "store_url": "https://shoepalace.com",
-      "amount": 520.0,
+      "amount": 520,
       "active": false,
       "decision": null,
       "items": [
-        { "name": "Flip Flops", "id": "PROD053", "price": 65.0, "quantity": 8 }
+        {
+          "name": "Flip Flops",
+          "id": "PROD053",
+          "price": 65,
+          "quantity": 8
+        }
       ]
     },
     {
@@ -779,11 +924,16 @@
       "store_name": "Tech Haven",
       "store_logo": "https://icon-library.com/images/technology-icon-png/technology-icon-png-0.jpg",
       "store_url": "https://techhaven.com",
-      "amount": 105.0,
+      "amount": 105,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "Scanner", "id": "PROD054", "price": 105.0, "quantity": 1 }
+        {
+          "name": "Scanner",
+          "id": "PROD054",
+          "price": 105,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -792,14 +942,14 @@
       "store_name": "Home Essentials",
       "store_logo": "https://images.scalebranding.com/home-shop-logo-846db8c3-82fb-435d-af81-e3cb2f85a597.jpg",
       "store_url": "https://homeessentials.com",
-      "amount": 130.0,
+      "amount": 130,
       "active": true,
       "decision": null,
       "items": [
         {
           "name": "Electric Oven",
           "id": "PROD055",
-          "price": 130.0,
+          "price": 130,
           "quantity": 1
         }
       ]
@@ -810,14 +960,14 @@
       "store_name": "Fashion Hub",
       "store_logo": "https://w7.pngwing.com/pngs/39/910/png-transparent-zara-fashion-clothes-clothing-brands-and-logos-icon-thumbnail.png",
       "store_url": "https://fashionhub.com",
-      "amount": 360.0,
+      "amount": 360,
       "active": false,
       "decision": null,
       "items": [
         {
           "name": "Men's Blazer",
           "id": "PROD056",
-          "price": 180.0,
+          "price": 180,
           "quantity": 2
         }
       ]
@@ -828,14 +978,14 @@
       "store_name": "Gadget World",
       "store_logo": "https://images-platform.99static.com/nOoFR6LUNVrevkzBaOL8uwhH5So=/201x17:854x670/500x500/top/smart/99designs-contests-attachments/70/70212/attachment_70212351",
       "store_url": "https://gadgetworld.com",
-      "amount": 900.0,
+      "amount": 900,
       "active": true,
       "decision": null,
       "items": [
         {
           "name": "Ultrawide Monitor",
           "id": "PROD057",
-          "price": 900.0,
+          "price": 900,
           "quantity": 1
         }
       ]
@@ -846,11 +996,16 @@
       "store_name": "Shoe Palace",
       "store_logo": "https://tager.drmediawy.com/wp-content/uploads/2024/05/5499206.png",
       "store_url": "https://shoepalace.com",
-      "amount": 585.0,
+      "amount": 585,
       "active": false,
       "decision": null,
       "items": [
-        { "name": "Sandals", "id": "PROD058", "price": 65.0, "quantity": 9 }
+        {
+          "name": "Sandals",
+          "id": "PROD058",
+          "price": 65,
+          "quantity": 9
+        }
       ]
     },
     {
@@ -859,11 +1014,16 @@
       "store_name": "Tech Haven",
       "store_logo": "https://icon-library.com/images/technology-icon-png/technology-icon-png-0.jpg",
       "store_url": "https://techhaven.com",
-      "amount": 115.0,
+      "amount": 115,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "Projector", "id": "PROD059", "price": 115.0, "quantity": 1 }
+        {
+          "name": "Projector",
+          "id": "PROD059",
+          "price": 115,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -872,14 +1032,14 @@
       "store_name": "Home Essentials",
       "store_logo": "https://images.scalebranding.com/home-shop-logo-846db8c3-82fb-435d-af81-e3cb2f85a597.jpg",
       "store_url": "https://homeessentials.com",
-      "amount": 140.0,
+      "amount": 140,
       "active": true,
       "decision": null,
       "items": [
         {
           "name": "Electric Stove",
           "id": "PROD060",
-          "price": 140.0,
+          "price": 140,
           "quantity": 1
         }
       ]
@@ -890,14 +1050,14 @@
       "store_name": "Fashion Hub",
       "store_logo": "https://w7.pngwing.com/pngs/39/910/png-transparent-zara-fashion-clothes-clothing-brands-and-logos-icon-thumbnail.png",
       "store_url": "https://fashionhub.com",
-      "amount": 400.0,
+      "amount": 400,
       "active": false,
       "decision": null,
       "items": [
         {
           "name": "Women's Blazer",
           "id": "PROD061",
-          "price": 200.0,
+          "price": 200,
           "quantity": 2
         }
       ]
@@ -908,11 +1068,16 @@
       "store_name": "Gadget World",
       "store_logo": "https://images-platform.99static.com/nOoFR6LUNVrevkzBaOL8uwhH5So=/201x17:854x670/500x500/top/smart/99designs-contests-attachments/70/70212/attachment_70212351",
       "store_url": "https://gadgetworld.com",
-      "amount": 1000.0,
+      "amount": 1000,
       "active": true,
       "decision": null,
       "items": [
-        { "name": "Gaming PC", "id": "PROD062", "price": 1000.0, "quantity": 1 }
+        {
+          "name": "Gaming PC",
+          "id": "PROD062",
+          "price": 1000,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -921,11 +1086,16 @@
       "store_name": "Shoe Palace",
       "store_logo": "https://tager.drmediawy.com/wp-content/uploads/2024/05/5499206.png",
       "store_url": "https://shoepalace.com",
-      "amount": 650.0,
+      "amount": 650,
       "active": false,
       "decision": null,
       "items": [
-        { "name": "Sneakers", "id": "PROD063", "price": 65.0, "quantity": 10 }
+        {
+          "name": "Sneakers",
+          "id": "PROD063",
+          "price": 65,
+          "quantity": 10
+        }
       ]
     }
   ]

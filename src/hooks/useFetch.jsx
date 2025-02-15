@@ -1,32 +1,43 @@
-import { useEffect, useState } from "react";
+import { useState, useCallback, useEffect } from "react";
 
-const useFetch = (url) => {
+const useFetch = (baseURL, action) => {
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState();
 
-  useEffect(() => {
-    setLoading(true);
-
-    const fetchData = async () => {
+  const sendRequest = useCallback(
+    async (id, options = {}) => {
+      setLoading(true);
       try {
-        const response = await fetch(url);
+        const url = id ? `${baseURL}/${id}` : baseURL; // Dynamically construct the URL
+        const response = await fetch(url, {
+          method: action === "GET" ? "GET" : options.method || "GET", // Default to GET if no method is provided
+          headers: {
+            "Content-Type": "application/json",
+            ...options.headers, // Merge any additional headers
+          },
+          body: action !== "GET" ? JSON.stringify(options.body) : null, // Include body for non-GET requests
+        });
+
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
-        const result = await response.json(); 
+
+        const result = await response.json();
         setData(result);
+        return result; // Return the result for further use
       } catch (error) {
         setError(error);
+        throw error; // Re-throw the error for handling in the component
       } finally {
         setLoading(false);
       }
-    };
 
-    fetchData();
-  }, [url]);
-
-  return { data, loading, error };
+    },
+    [baseURL, action]
+  );
+ 
+  return { data, loading, error, sendRequest };
 };
 
-export default useFetch; 
+export default useFetch;

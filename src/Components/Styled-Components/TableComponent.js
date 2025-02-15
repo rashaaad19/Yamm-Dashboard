@@ -108,6 +108,12 @@ export const Table = styled.table`
     td:nth-of-type(9)::before {
       content: "Items";
     }
-
   }
+    div.actions{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    }
 `;
+
+

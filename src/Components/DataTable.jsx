@@ -1,7 +1,8 @@
 import { Table, TableContainer } from "./Styled-Components/TableComponent";
 import SearchBar from "./SearchBar";
 import Pagination from "./Pagination";
-
+import { FaEye } from "react-icons/fa";
+import Switch from "./Switch";
 const DataTable = ({
   caption,
   tableHeaders,
@@ -9,12 +10,12 @@ const DataTable = ({
   loading,
   currentPage,
   totalPages,
-  handlePageChange,
   onSearchChange,
   searchTerm,
+  handlePageChange,
+  handleDecisionChange,
+  handleStatusChange,
 }) => {
-
-  
   return (
     <TableContainer>
       <Table>
@@ -51,11 +52,7 @@ const DataTable = ({
                     <img src={data.store_logo} alt={data.store_name} />
                   </td>
                   <td>
-                    <a
-                      href={data.store_url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <a href={data.store_url} target="_blank">
                       {data.store_url}
                     </a>
                   </td>
@@ -63,11 +60,35 @@ const DataTable = ({
                   <td>{data.active ? "Yes" : "No"}</td>
                   <td>{data.decision || "Pending"}</td>
                   <td>{data.items.length}</td>
+                  <td>
+                    <div className="actions">
+                      <select
+                        value={data.decision || "not yet"}
+                        onChange={(e) =>
+                          handleDecisionChange(data.id, e.target.value)
+                        }
+                      >
+                        <option value="not yet">Not Yet</option>
+                        <option value="Reject">Reject</option>
+                        <option value="Accept">Accept</option>
+                        <option value="Escalate">Escalate</option>
+                      </select>
+                      <Switch
+                        checked={data.active}
+                        id={data.id}
+                        handleStatusChange={handleStatusChange}
+                      />
+                      <FaEye />
+                    </div>
+                  </td>
                 </tr>
               ))
             ) : (
               <tr>
-                <td colSpan={tableHeaders.length} style={{ textAlign: "center" }}>
+                <td
+                  colSpan={tableHeaders.length}
+                  style={{ textAlign: "center" }}
+                >
                   There are no orders.
                 </td>
               </tr>
