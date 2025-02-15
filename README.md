@@ -47,7 +47,8 @@ This is a simple dashboard task submitted as part of an assignment. The project 
 ![image](https://github.com/user-attachments/assets/dcae9d12-de8f-4a87-b65c-eded01e7f0b0)
 <br>
 <br>
-![image](https://github.com/user-attachments/assets/270125c3-7596-4219-9abf-56ca59e76411)
+![image](https://github.com/user-attachments/assets/327e3f89-412c-4e59-b7f1-f13918bbe512)
+
 
 </div>
 
