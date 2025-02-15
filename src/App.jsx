@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-import DataTable from "./Components/DataTable";
 import Root from "./Pages/Root";
 import RefundOrders from "./Pages/RefundOrders";
 import {ToastContainer } from "react-toastify";
@@ -12,7 +11,6 @@ import ItemProfile from "./Pages/ItemProfile";
 import  {loader as itemLoader} from "./Pages/ItemProfile"
 
 function App() {
-  const notify = () => toast("Wow so easy !");
 
   let router = createBrowserRouter([
     {

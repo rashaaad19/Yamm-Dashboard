@@ -2,6 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { ItemProfileContainer } from "../Components/Styled-Components/ItemProfile";
 
 const ItemProfile = () => {
+  //extracting data using useLoader data from react router dom
   const order = useLoaderData();
 
   return (
@@ -57,6 +58,8 @@ const ItemProfile = () => {
 };
 export default ItemProfile;
 
+//initialize loader function for this page, get the params to easily fetch the required item data
+//return: data returned from the api call
 export const loader = async ({ params }) => {
   const id = params.id;
   let url = `http://localhost:3000/orders/${id}`;

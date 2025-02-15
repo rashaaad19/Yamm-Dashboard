@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import DataTable from "../Components/DataTable";
-import PageHeader from "../Components/PageHeader";
 import useFetch from "../hooks/useFetch";
 import usePagination from "../hooks/usePagination";
 import { Bounce, toast } from "react-toastify";
@@ -23,15 +22,7 @@ const RefundOrders = () => {
     "Actions",
   ];
 
-  //Fetch logic
-  const {
-    data: orders,
-    loading,
-    error,
-    sendRequest,
-  } = useFetch("http://localhost:3000/orders", "GET");
-
-  //Search logic
+  //function to filter and update the orders based on user Input
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
   };
@@ -39,23 +30,28 @@ const RefundOrders = () => {
     order.id.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  //Pagination Logic
+  //Read data from server
   const {
-    currentPage,
-    totalPages,
-    currentItems: currentOrders,
-    handlePageChange,
-  } = usePagination(filteredOrders, 15);
+    data: orders,
+    loading,
+    error,
+    sendRequest,
+  } = useFetch("http://localhost:3000/orders", "GET"); //specify action to GET for read requests
 
-  // Decising change logic
+  // params: base url and patch method to trigger edit requests
+  // return: function to trigger updates
   const { sendRequest: sendEditRequest } = useFetch(
     "http://localhost:3000/orders",
     "PATCH"
   );
+
+  //Onchange handler passed from the component tree
+  //params: id of selected item and decision
+  //triggers state update and server update based on user selection
   const handleDecisionChange = async (id, decision) => {
     const selectedOrder = ordersData.find((order) => order.id === id);
-    console.log(decision);
     try {
+      //trigger fetching function to edit the item in database
       await sendEditRequest(id, {
         method: "PATCH",
         body: { decision },
@@ -66,68 +62,58 @@ const RefundOrders = () => {
           order.id === id ? { ...order, decision } : order
         )
       );
+      //accept toaster notification
       if (decision === "Accept") {
-        //accept toaster notification
-        toast.success(
-          `Order ${selectedOrder.id} is accepted`,
-          {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: false,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-            transition: Bounce,
-          }
-        );
+        toast.success(`Order ${selectedOrder.id} is accepted`, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+        });
       }
-
+      //reject toaster notification
       if (decision === "Reject") {
-        //reject toaster notification
-        toast.error(
-          `Order ${selectedOrder.id} is rejected`,
-          {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: false,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-            transition: Bounce,
-          }
-        );
+        toast.error(`Order ${selectedOrder.id} is rejected`, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+        });
       }
+      //warning toaster notification
       if (decision === "Escalate") {
-        //warning toaster notification
-        toast.warning(
-          `Order ${selectedOrder.id} is escalated`,
-          {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: false,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-            transition: Bounce,
-          }
-        );
+        toast.warning(`Order ${selectedOrder.id} is escalated`, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+        });
       }
-
     } catch (error) {
       console.error("Error updating decision:", error);
     }
   };
 
-  //Active Status Logic
+  //onChange function passed as prop and fires when the user switch the order status
+  //params: id of selected element and new active status
   const handleStatusChange = async (id, active) => {
     const selectedOrder = ordersData.find((order) => order.id === id);
-
+    //trigger fetching function to edit the item in database
     try {
       await sendEditRequest(id, {
         method: "PATCH",
@@ -163,22 +149,28 @@ const RefundOrders = () => {
     }
   };
 
-  //Effect to fetch the data
+  //Effect to get the data form database
   useEffect(() => {
     sendRequest();
   }, [sendRequest]);
 
-  //Effect to update the state
+  //Effect to update the state when orders changes to reflect spontaneously on UI
   useEffect(() => {
     if (orders) {
-      setOrdersData(orders); // Update `ordersData` when `orders` changes
+      setOrdersData(orders); 
     }
   }, [orders]);
 
+  //Pagination custom hook that takes the orders and the number of elements per page
+  //Returns page and items states to update the UI, and a function to navigate to pages
+  const {
+    currentPage,
+    totalPages,
+    currentItems: currentOrders,
+    handlePageChange,
+  } = usePagination(filteredOrders, 15);
   return (
     <>
-      {/* <PageHeader /> */}
-
       <DataTable
         caption="Refund Requests"
         tableHeaders={tableHeaders}
