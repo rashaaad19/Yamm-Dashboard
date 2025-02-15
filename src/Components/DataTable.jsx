@@ -21,7 +21,6 @@ const DataTable = ({
     <TableContainer>
       <Table>
         <caption>{caption}</caption>
-        <SearchBar value={searchTerm} onChange={onSearchChange} />
         {loading ? (
           <tbody>
             <tr>
@@ -36,6 +35,12 @@ const DataTable = ({
           </tbody>
         ) : (
           <tbody>
+            <tr>
+              <td>
+                <SearchBar value={searchTerm} onChange={onSearchChange} />
+              </td>
+            </tr>
+
             <tr>
               {tableHeaders.map((header, index) => (
                 <th key={index}>{header}</th>

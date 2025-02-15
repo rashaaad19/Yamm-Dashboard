@@ -20,7 +20,7 @@ const SideBar = () => {
   console.log(sideBarToggle);
 
   return (
-    <SideBarContainer isOpen={sideBarToggle}>
+    <SideBarContainer $isOpen={sideBarToggle}>
       <NavListContainer>
         <li>
           <SideBarHeader>
@@ -63,7 +63,7 @@ const SideBar = () => {
               </svg>
             </a>
 
-            <ToggleButton onClick={handleToggle} isOpen={sideBarToggle}>
+            <ToggleButton onClick={handleToggle} $isOpen={sideBarToggle}>
               <MdKeyboardDoubleArrowLeft size={20} />
             </ToggleButton>
           </SideBarHeader>

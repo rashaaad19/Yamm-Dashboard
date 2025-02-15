@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const SideBarContainer = styled.nav`
 box-sizing:border-box;
-width: ${(props) => (props.isOpen ? '240px' : '60px')};
-min-width: ${(props) => (props.isOpen ? '240px' : '60px')};
+width: ${(props) => (props.$isOpen ? '240px' : '60px')};
+min-width: ${(props) => (props.$isOpen ? '240px' : '60px')};
 
 background-color:#E5E5E5;
 height:100vh;
 display:flex;
 flex-direction:column;
-padding: ${(props) => (props.isOpen ? '5px 1em' : '5px')};
+padding: ${(props) => (props.$isOpen ? '5px 1em' : '5px')};
 border-right:1px solid #E5E5E5;
 position:sticky;
 top:0;
@@ -20,7 +20,7 @@ text-wrap:nowrap;
 
 .sidebar-item{
 display:flex;
-gap: ${(props) => (props.isOpen ? '5px' : '20px')};
+gap: ${(props) => (props.$isOpen ? '5px' : '20px')};
 text-decoration:none;
 align-items:center;
 font-size:16px;
@@ -85,7 +85,7 @@ padding:.85em;
 `
 export const SideBarItem = styled.p`
 display:flex;
-gap: ${(props) => (props.isOpen ? '5px' : '20px')};
+gap: ${(props) => (props.$isOpen ? '5px' : '20px')};
 text-decoration:none;
 align-items:center;
 font-size:16px;
@@ -109,7 +109,7 @@ border-radius:.5em;
 background:none;
 cursor:pointer;
 svg{
-transform:rotate(${(props) => (props.isOpen ? '0deg' : '180deg')});
+transform:rotate(${(props) => (props.$isOpen ? '0deg' : '180deg')});
 transition:transform 150ms ease;
 }
 &:hover{

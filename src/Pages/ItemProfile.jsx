@@ -4,6 +4,7 @@ import { ItemProfileContainer } from "../Components/Styled-Components/ItemProfil
 const ItemProfile = () => {
   //extracting data using useLoader data from react router dom
   const order = useLoaderData();
+  console.log(order)
 
   return (
     <ItemProfileContainer>
@@ -33,7 +34,7 @@ const ItemProfile = () => {
           <strong>Status:</strong> {order.active ? "Active" : "Inactive"}
         </p>
         <p>
-          <strong>Decision:</strong> {order.decision}
+          <strong>Decision:</strong> {order.decision||"Not Yet"}
         </p>
       </div>
 
