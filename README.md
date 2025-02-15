@@ -2,39 +2,7 @@
 
 # Yamm Dashboard
 
-This is a simple dashboard task submitted as part of an assignment. The project includes a responsive sidebar, a dynamic table, and an order item page. The table fetches data from a dummy `db.json` file served by `json-server`, and users can interact with the table to change decisions, toggle active status, and navigate to item details.
-## Images
-
-
-<div align="center">
-
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
-![alt text](image-4.png)
-
-</div>
-
-## Features
-
-- **Responsive Sidebar**: Navigate between different pages.
-- **Dynamic Paginated Table**: Fetches data from a `db.json` file with 15 result per page.
--  **Search Bar**: Allows users to search for orders by ID.
-- **Interactive Actions**:
-  - Change decision using a select element.
-  - Toggle active status using a switch component.
-  - Navigate to item details using an icon.
-- **Order Item Page**: Displays details about the selected item.
-
-## Libraries Used
-
-- **React**: JavaScript library for building user interfaces.
-- **Vite**: Fast build tool for modern web projects.
-- **React Router DOM**: For routing between pages.
-- **JSON Server**: Simulates a REST API using a `db.json` file.
-- **React Icons**: Provides icons for the UI.
-- **Styled Components**: For styling React components.
-- **React Toastify**: Displays toast notifications.
+This is a simple dashboard task submitted as part of an assignment. The project includes a responsive sidebar, a dynamic table with search bar and pagination, and an order item page. The table fetches virtual store and orders data from a`db.json` file served by `json-server`, and users can interact with the table to change decisions, toggle active status, and navigate to item details.
 
 ## Installation
 
@@ -65,6 +33,46 @@ This is a simple dashboard task submitted as part of an assignment. The project 
 
 5. **Access the application**:
    - Open your browser and navigate to `http://localhost:5173` (or the port specified by Vite).
+## Images
+
+
+<div align="center">
+
+![alt text](image-1.png)
+<br>
+<br>
+![image](https://github.com/user-attachments/assets/db0910f9-d729-4179-b68f-9b10a25cdbb6)
+<br>
+<br>
+![alt text](image-3.png)
+<br>
+<br>
+![alt text](image-4.png)
+
+</div>
+
+## Features
+
+- **Responsive Sidebar**: Navigate between different pages.
+- **Dynamic Paginated Table**: Fetches data from a `db.json` file with 15 result per page.
+-  **Search Bar**: Allows users to search for orders by ID.
+- **Interactive Actions**:
+  - Change decision using a select element.
+  - Toggle active status using a switch component.
+  - Navigate to item details using an icon.
+- **Order Item Page**: Displays details about the selected item.
+
+## Libraries Used
+
+- **React**: JavaScript library for building user interfaces.
+- **Vite**: Fast build tool for modern web projects.
+- **React Router DOM**: For routing between pages.
+- **JSON Server**: Simulates a REST API using a `db.json` file.
+- **React Icons**: Provides icons for the UI.
+- **Styled Components**: For styling React components.
+- **React Toastify**: Displays toast notifications.
+
+
 
 ## Project Structure
 
@@ -99,9 +107,6 @@ This is a simple dashboard task submitted as part of an assignment. The project 
 
 This project is a task submission and is not open for contributions.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
+#
 ---
 
