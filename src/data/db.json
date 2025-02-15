@@ -80,7 +80,7 @@
       "store_url": "https://gadgetworld.com",
       "amount": 200,
       "active": true,
-      "decision": null,
+      "decision": "Accept",
       "items": [
         {
           "name": "Smartphone",
