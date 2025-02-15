@@ -3,6 +3,8 @@ import DataTable from "../Components/DataTable";
 import PageHeader from "../Components/PageHeader";
 import useFetch from "../hooks/useFetch";
 import usePagination from "../hooks/usePagination";
+import { Bounce, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; // Don't forget the CSS
 
 const RefundOrders = () => {
   const [ordersData, setOrdersData] = useState([]);
@@ -51,6 +53,8 @@ const RefundOrders = () => {
     "PATCH"
   );
   const handleDecisionChange = async (id, decision) => {
+    const selectedOrder = ordersData.find((order) => order.id === id);
+    console.log(decision);
     try {
       await sendEditRequest(id, {
         method: "PATCH",
@@ -62,15 +66,68 @@ const RefundOrders = () => {
           order.id === id ? { ...order, decision } : order
         )
       );
+      if (decision === "Accept") {
+        //accept toaster notification
+        toast.success(
+          `Order ${selectedOrder.id} is accepted`,
+          {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+          }
+        );
+      }
 
-      console.log("Decision updated successfully");
+      if (decision === "Reject") {
+        //reject toaster notification
+        toast.error(
+          `Order ${selectedOrder.id} is rejected`,
+          {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+          }
+        );
+      }
+      if (decision === "Escalate") {
+        //warning toaster notification
+        toast.warning(
+          `Order ${selectedOrder.id} is escalated`,
+          {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+          }
+        );
+      }
+
     } catch (error) {
       console.error("Error updating decision:", error);
     }
   };
-  
+
   //Active Status Logic
   const handleStatusChange = async (id, active) => {
+    const selectedOrder = ordersData.find((order) => order.id === id);
+
     try {
       await sendEditRequest(id, {
         method: "PATCH",
@@ -81,6 +138,23 @@ const RefundOrders = () => {
         prevOrders.map((order) =>
           order.id === id ? { ...order, active } : order
         )
+      );
+      //toaster notification
+      toast.info(
+        `Order ${selectedOrder.id} is ${
+          !selectedOrder.active === false ? "not active" : "active"
+        } now`,
+        {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+        }
       );
 
       console.log("Decision updated successfully");
@@ -101,10 +175,10 @@ const RefundOrders = () => {
     }
   }, [orders]);
 
-  console.log(ordersData);
   return (
     <>
       {/* <PageHeader /> */}
+
       <DataTable
         caption="Refund Requests"
         tableHeaders={tableHeaders}

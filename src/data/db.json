@@ -7,8 +7,8 @@
       "store_logo": "https://icon-library.com/images/technology-icon-png/technology-icon-png-0.jpg",
       "store_url": "https://techhaven.com",
       "amount": 120.5,
-      "active": false,
-      "decision": "Accept",
+      "active": true,
+      "decision": "Escalate",
       "items": [
         {
           "name": "Wireless Mouse",
@@ -31,7 +31,7 @@
       "store_logo": "https://w7.pngwing.com/pngs/39/910/png-transparent-zara-fashion-clothes-clothing-brands-and-logos-icon-thumbnail.png",
       "store_url": "https://fashionhub.com",
       "amount": 89.99,
-      "active": true,
+      "active": false,
       "decision": "Escalate",
       "items": [
         {
