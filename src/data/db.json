@@ -8,7 +8,7 @@
       "store_url": "https://techhaven.com",
       "amount": 120.5,
       "active": true,
-      "decision": "Escalate",
+      "decision": "Accept",
       "items": [
         {
           "name": "Wireless Mouse",
@@ -152,7 +152,7 @@
       "store_url": "https://fashionhub.com",
       "amount": 120,
       "active": false,
-      "decision": null,
+      "decision": "Reject",
       "items": [
         {
           "name": "Women's Dress",
@@ -818,7 +818,7 @@
       "store_url": "https://shoepalace.com",
       "amount": 455,
       "active": false,
-      "decision": null,
+      "decision": "Accept",
       "items": [
         {
           "name": "Slippers",
