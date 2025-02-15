@@ -74,7 +74,7 @@ const DataTable = ({
                   </td>
                   <td>${data.amount.toFixed(2)}</td>
                   <td>{data.active ? "Yes" : "No"}</td>
-                  <td>{data.decision || "Pending"}</td>
+                  <td>{data.decision || "Not Yet"}</td>
                   <td>{data.items.length}</td>
                   <td>
                     <div className="actions">
@@ -84,7 +84,7 @@ const DataTable = ({
                           handleDecisionChange(data.id, e.target.value)
                         }
                       >
-                        <option value="not yet">Not Yet</option>
+                        <option value="Not Yet">Not Yet</option>
                         <option value="Reject">Reject</option>
                         <option value="Accept">Accept</option>
                         <option value="Escalate">Escalate</option>

@@ -50,6 +50,7 @@ const RefundOrders = () => {
   //triggers state update and server update based on user selection
   const handleDecisionChange = async (id, decision) => {
     const selectedOrder = ordersData.find((order) => order.id === id);
+    console.log(decision)
     try {
       //trigger fetching function to edit the item in database
       await sendEditRequest(id, {
@@ -104,6 +105,20 @@ const RefundOrders = () => {
           transition: Bounce,
         });
       }
+      if (decision === "Not Yet") {
+        toast.warning(`Order ${selectedOrder.id} is yet to be decided`, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+        });
+      }
+      
     } catch (error) {
       console.error("Error updating decision:", error);
     }

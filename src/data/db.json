@@ -8,7 +8,7 @@
       "store_url": "https://techhaven.com",
       "amount": 120.5,
       "active": true,
-      "decision": "Escalate",
+      "decision": "Accept",
       "items": [
         {
           "name": "Wireless Mouse",
@@ -56,7 +56,7 @@
       "store_url": "https://homeessentials.com",
       "amount": 45,
       "active": true,
-      "decision": null,
+      "decision": "Reject",
       "items": [
         {
           "name": "Blender",
