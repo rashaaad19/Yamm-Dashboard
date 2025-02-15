@@ -3,6 +3,7 @@ import SearchBar from "./SearchBar";
 import Pagination from "./Pagination";
 import { FaEye } from "react-icons/fa";
 import Switch from "./Switch";
+import { Link } from "react-router-dom";
 const DataTable = ({
   caption,
   tableHeaders,
@@ -44,7 +45,18 @@ const DataTable = ({
             {/* Render current orders */}
             {currentOrders.length > 0 ? (
               currentOrders.map((data) => (
-                <tr key={data.id}>
+                <tr
+                  key={data.id}
+                  className={
+                    data.decision === "Escalate"
+                      ? "escalate-action-row"
+                      : data.decision === "Accept"
+                      ? "accept-action-row"
+                      : data.decision === "Reject"
+                      ? "reject-action-row"
+                      : ""
+                  }
+                >
                   <td>{data.id}</td>
                   <td>{data.reason}</td>
                   <td>{data.store_name}</td>
@@ -52,8 +64,12 @@ const DataTable = ({
                     <img src={data.store_logo} alt={data.store_name} />
                   </td>
                   <td>
-                    <a href={data.store_url} target="_blank">
-                      {data.store_url}
+                    <a
+                      className="store-website"
+                      href={data.store_url}
+                      target="_blank"
+                    >
+                      {data.store_name + " Website"}
                     </a>
                   </td>
                   <td>${data.amount.toFixed(2)}</td>
@@ -78,7 +94,10 @@ const DataTable = ({
                         id={data.id}
                         handleStatusChange={handleStatusChange}
                       />
-                      <FaEye />
+                      <Link to={"/itemProfile"} className="navigate-action">
+                        {" "}
+                        <FaEye />
+                      </Link>
                     </div>
                   </td>
                 </tr>

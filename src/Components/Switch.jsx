@@ -5,6 +5,7 @@ const Switch = ({ checked, id, handleStatusChange }) => {
       <input
         type="checkbox"
         onChange={(e) => handleStatusChange(id, e.target.checked)}
+        checked={checked}
       />
       <span></span>
     </SwitchLabel>

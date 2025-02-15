@@ -109,10 +109,30 @@ export const Table = styled.table`
       content: "Items";
     }
   }
+    .escalate-action-row{
+    background-color:#fff3cd ;
+    }
+    .accept-action-row{
+    background-color:#d4edda ;
+    }
+    .reject-action-row{
+       background-color:#f8d7da ;
+    }
+    .store-website{
+    color:#2d5de3;
+    text-decoration:none;
+    }
     div.actions{
     display:flex;
     align-items:center;
     gap:10px;
+    .navigate-action{
+      color:black;
+      padding-top:5px;
+    }
+      .navigate-action:hover{
+      color:gray;
+      }
     }
 `;
 

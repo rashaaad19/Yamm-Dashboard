@@ -8,7 +8,7 @@
       "store_url": "https://techhaven.com",
       "amount": 120.5,
       "active": false,
-      "decision": "Escalate",
+      "decision": "Accept",
       "items": [
         {
           "name": "Wireless Mouse",
@@ -31,7 +31,7 @@
       "store_logo": "https://w7.pngwing.com/pngs/39/910/png-transparent-zara-fashion-clothes-clothing-brands-and-logos-icon-thumbnail.png",
       "store_url": "https://fashionhub.com",
       "amount": 89.99,
-      "active": false,
+      "active": true,
       "decision": "Escalate",
       "items": [
         {
@@ -98,7 +98,7 @@
       "store_url": "https://shoepalace.com",
       "amount": 65,
       "active": false,
-      "decision": null,
+      "decision": "Accept",
       "items": [
         {
           "name": "Running Shoes",
@@ -134,7 +134,7 @@
       "store_url": "https://homeessentials.com",
       "amount": 90,
       "active": true,
-      "decision": null,
+      "decision": "Reject",
       "items": [
         {
           "name": "Air Fryer",
